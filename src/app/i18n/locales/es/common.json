@@ -1,0 +1,12 @@
+{
+	"appName": "Portal Escolar",
+	"welcome": "Bienvenido",
+	"loading": "Cargando...",
+	"error": "Error",
+	"success": "Éxito",
+	"cancel": "Cancelar",
+	"submit": "Enviar",
+	"logout": "Cerrar sesión",
+	"home": "Inicio",
+	"dashboardPlaceholder": "El inicio de sesión está listo. Los módulos escolares se agregarán aquí."
+}

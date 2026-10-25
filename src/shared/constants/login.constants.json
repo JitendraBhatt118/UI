@@ -1,0 +1,8 @@
+{
+	"loginErrorMessages": {
+		"InvalidEmail": "Invalid email.",
+		"InvalidPassword": "Invalid password.",
+		"Invalid Username": "Invalid username.",
+		"Invalid Password": "Invalid password."
+	}
+}

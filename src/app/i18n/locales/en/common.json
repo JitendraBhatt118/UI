@@ -1,0 +1,12 @@
+{
+	"appName": "School Portal",
+	"welcome": "Welcome",
+	"loading": "Loading...",
+	"error": "Error",
+	"success": "Success",
+	"cancel": "Cancel",
+	"submit": "Submit",
+	"logout": "Logout",
+	"home": "Home",
+	"dashboardPlaceholder": "Login is complete. Additional school modules will be added here."
+}

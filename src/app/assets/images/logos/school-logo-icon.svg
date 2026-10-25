@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <rect width="40" height="40" rx="10" fill="url(#schoolIconGradient)"/>
+  <path d="M20 10.5L32.5 16.6L20 22.8L7.5 16.6L20 10.5Z" fill="white"/>
+  <path d="M11.8 18.8V24.4C11.8 24.4 15.5 27.8 20 27.8C24.5 27.8 28.2 24.4 28.2 24.4V18.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M32.5 16.8V25.2" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="schoolIconGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#50A7FE"/>
+      <stop offset="1" stop-color="#9950FF"/>
+    </linearGradient>
+  </defs>
+</svg>

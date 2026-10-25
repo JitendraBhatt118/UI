@@ -1,0 +1,40 @@
+@use "../styles/layout" as *;
+@use "../styles/common/variables" as *;
+@use "../styles/common/mixins" as *;
+@use "../styles/common/toast" as *;
+
+:root,
+*:before,
+*:after {
+    --background-main: #F4F4F4;
+    --sidebar-background: #19182F;
+    --surface-main: #FFFFFF;
+    --surface-soft: #F9F9F9;
+    --surface-muted: #F4F4F4;
+    --surface-elevated: #FFFFFF;
+    --border-main: #CCCCCC;
+    --brand-blue: #50A7FE;
+    --brand-purple: #9950FF;
+    --gradient: linear-gradient(270deg, var(--brand-purple) 0%, var(--brand-blue) 100%);
+    --theme-gradient: linear-gradient(90deg, #50A7FE 0%, #9950FF 100%);
+    --brand-secondary: #B621FE;
+    --text-primary: #111111;
+    --text-secondary: #333333;
+    --text-light: #666666;
+    --text-muted: #999999;
+    --link-main: #0091E6;
+    --link-secondary: #666666;
+    --green: #61C121;
+    --red: #E3595B;
+    --yellow: #E8B72E;
+    --orange: #F78B18;
+    --blue: #006DC1;
+    --shadow: 0px 0px 4px 0px #00000040;
+    --shadow-dark: 0px 0px 6px 0px #00000033;
+    --shadow-bottom: 0px 2px 4px 0px #00000014;
+    --outline-border: transparent;
+}
+
+#root {
+    min-height: 100%;
+}

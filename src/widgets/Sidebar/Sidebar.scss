@@ -1,0 +1,136 @@
+@use '../../app/styles/common/variables' as *;
+@use '../../app/styles/common/mixins' as *;
+
+.sidebar {
+	width: 6rem;
+	transition: all 0.05s;
+	position: relative;
+	z-index: 99;
+	flex-shrink: 0;
+
+	&.custom-scrollbar {
+		border-radius: 0;
+		overflow: inherit;
+	}
+
+	&,
+	.sidebar-content {
+		background: var(--sidebar-background);
+		height: 100vh;
+	}
+
+	.sidebar-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.logo-icon {
+		display: block;
+		width: 3.8rem;
+	}
+
+	.sidebar-brand {
+		display: block;
+		text-align: left;
+		padding: 1.5rem;
+
+		@include mobile {
+			padding: 1.5rem 1rem 0 2rem;
+		}
+	}
+}
+
+.sidebar-nav {
+	z-index: 99;
+
+	li {
+		border-radius: 5px;
+		padding: 0.8rem;
+		margin: 1rem;
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.1);
+		}
+
+		a,
+		button {
+			display: flex;
+			align-items: center;
+			white-space: nowrap;
+			font-size: 1.8rem;
+			color: $Gray;
+			background: none;
+			border: none;
+			padding: 0;
+			cursor: pointer;
+			width: 100%;
+			text-align: left;
+
+			&:hover,
+			&.current {
+				text-decoration: none;
+				color: $White2;
+
+				.sidebar-icon {
+					opacity: 1;
+					color: $White2;
+				}
+			}
+
+			&:hover {
+				span {
+					margin-left: 6rem;
+					display: block;
+					background: $White;
+					color: $Black;
+					font-family: $OpenSans;
+					font-size: 1.5rem;
+					font-weight: 500;
+					letter-spacing: 0;
+					position: absolute;
+					z-index: 9;
+					padding: 1rem 1.35rem;
+					border-radius: 6px;
+					box-shadow:
+						0 2px 6px rgba(0, 0, 0, 0.06),
+						0 8px 24px rgba(0, 0, 0, 0.1);
+					opacity: 1;
+					width: max-content;
+					max-width: min(26rem, 70vw);
+					white-space: nowrap;
+					pointer-events: none;
+
+					&:after {
+						top: 50%;
+						left: -1rem;
+						transform: translateY(-50%);
+						border: solid transparent;
+						content: ' ';
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+						border-top: 7px solid transparent;
+						border-right: 9px solid $White;
+						border-bottom: 7px solid transparent;
+					}
+				}
+			}
+		}
+
+		.sidebar-icon {
+			width: 2.4rem;
+			height: 2.4rem;
+			color: $Gray;
+			opacity: 0.9;
+			flex-shrink: 0;
+		}
+
+		span {
+			font-size: 0;
+			width: 0;
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+}

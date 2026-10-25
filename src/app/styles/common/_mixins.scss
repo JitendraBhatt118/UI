@@ -1,0 +1,41 @@
+@use "../common/variables" as *;
+
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out, $lasttime: 0s) {
+    transition: $what $time $how $lasttime;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        box-shadow: inset $top $left $blur $color;
+    } @else {
+        box-shadow: $top $left $blur $color;
+    }
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin desktop-md {
+    @media (max-width: #{$desktop-md}) {
+        @content
+    }
+}
+
+@mixin desktop {
+    @media (max-width: #{$desktop}) {
+        @content
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content
+    }
+}

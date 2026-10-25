@@ -1,0 +1,47 @@
+@use "../common/variables" as *;
+@use "../common/mixins" as *;
+
+.btn {
+    &-primary {
+        align-items: center;
+        background-attachment: initial;
+        background-color: transparent;
+        background-clip: border-box;
+        background-image: $ThemeGradient;
+        background-origin: border-box;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: no-repeat;
+        background-size: initial;
+        border: 2px solid transparent;
+        box-shadow: none;
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+            box-shadow: 2px 100rem 1px $white-bg inset;
+            color: $Purpal;
+        }
+    }
+
+    &-secondary {
+        color: $basecolor;
+        background-color: $white-bg;
+        font-size: 1.8rem;
+        border: 1px solid $basecolor;
+        font-weight: 600;
+        margin-left: 1rem;
+
+        &:hover,
+        &.active,
+        &:focus {
+            background: $basecolor;
+            color: $White2;
+        }
+    }
+}

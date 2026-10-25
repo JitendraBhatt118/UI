@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" fill="none">
+  <rect x="2" y="6" width="36" height="36" rx="10" fill="url(#schoolGradient)"/>
+  <path d="M20 14.5L32 20.2L20 26L8 20.2L20 14.5Z" fill="white"/>
+  <path d="M12.2 22.2V27.4C12.2 27.4 15.6 30.6 20 30.6C24.4 30.6 27.8 27.4 27.8 27.4V22.2" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M32 20.4V27.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="50" y="31" fill="#24243E" font-family="Open Sans, Arial, sans-serif" font-size="22" font-weight="700">School Portal</text>
+  <defs>
+    <linearGradient id="schoolGradient" x1="2" y1="6" x2="38" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#50A7FE"/>
+      <stop offset="1" stop-color="#9950FF"/>
+    </linearGradient>
+  </defs>
+</svg>

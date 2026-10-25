@@ -1,0 +1,18 @@
+@use "../common/variables" as *;
+@use "../common/mixins" as *;
+
+.float-input:not(:placeholder-shown)~.float-label,
+.float-input:focus~.float-label,
+.float-input:-webkit-autofill~.float-label {
+    top: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.float-input:focus~.float-label {
+    color: var(--color-text-primary);
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}

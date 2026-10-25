@@ -1,0 +1,12 @@
+{
+	"appName": "Portail Scolaire",
+	"welcome": "Bienvenue",
+	"loading": "Chargement...",
+	"error": "Erreur",
+	"success": "Succès",
+	"cancel": "Annuler",
+	"submit": "Soumettre",
+	"logout": "Se déconnecter",
+	"home": "Accueil",
+	"dashboardPlaceholder": "La connexion est prête. Les modules scolaires seront ajoutés ici."
+}

@@ -1,0 +1,62 @@
+@use "../common/variables" as *;
+@use "../common/mixins" as *;
+
+.checkbox,
+.radio-custom {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+.checkbox-tick {
+    width: 25px;
+    height: 25px;
+    border: 1px solid $contentText;
+    border-radius: 4px;
+    background-color: $white-bg;
+    position: relative;
+    transition: all 0.2s ease;
+
+    &:hover {
+        border-color: #9ca3af;
+    }
+
+    &:checked {
+        border-color: #6b7280;
+        background-color: white;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: 2px;
+            width: 6px;
+            height: 14px;
+            border: solid #6b7280;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.input-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    .input-label {
+        font-size: 18px;
+        color: $contentText;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    .input-main-content {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}

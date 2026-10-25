@@ -1,0 +1,41 @@
+@use "../common/theme" as *;
+
+$bg-body: var(--color-bg-body);
+$bg-surface: var(--color-bg-surface);
+$text-primary: var(--color-text-primary);
+$text-secondary: var(--color-text-secondary);
+$text-muted: var(--color-text-muted);
+
+$White: #FFFFFF;
+$Black: #000000;
+$OpenSans: 'Open Sans', Arial;
+$font-family: 'Open Sans', Arial;
+
+$bodyBg: var(--body-bg);
+$white-bg: var(--surface-main);
+$white-bg1: var(--white-bg1);
+$body-color: var(--body-color);
+$contentText: var(--content-text);
+$GrayLight: var(--gray-light);
+$Gray2: var(--gray2);
+$Gray: #cccccc;
+$GrayDark: #666666;
+$contentText4: var(--content-text4);
+$White2: #ffffff;
+$basecolor: var(--brand-secondary);
+$Purpal: var(--brand-secondary);
+$RedLight: #e3595b;
+$ThemeGradient: var(--theme-gradient);
+$linkColor: #0091E6;
+$BlueLight2: var(--blue-light);
+
+$scrolbarBase: #DEDEDE;
+$scrolbarThumb: #8D8D8D;
+
+$font-15: 1.5rem;
+$font-16: 1.6rem;
+
+$desktop-md: 1280px;
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 767px;

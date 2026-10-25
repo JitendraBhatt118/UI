@@ -1,0 +1,9 @@
+{
+	"pageNotFound": "Página no encontrada",
+	"somethingWentWrong": "Algo salió mal",
+	"tryAgain": "Intentar de nuevo",
+	"backToHome": "Volver al inicio",
+	"unauthorized": "No estás autorizado para acceder a esta página",
+	"networkError": "Error de red. Por favor verifica tu conexión.",
+	"pageNotExists": "La página que buscas no existe o ha sido movida."
+}

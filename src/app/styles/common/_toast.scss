@@ -1,0 +1,93 @@
+:root {
+	--toastify-toast-width: min(94vw, 560px);
+	--toastify-toast-bd-radius: 5px;
+	--toastify-toast-min-height: auto;
+	--toastify-z-index: 10050;
+	--toastify-color-progress-bgo: 0.18;
+	--app-toast-success: #61c121;
+	--app-toast-success-soft: #eaf7e3;
+	--app-toast-error: #e3595b;
+	--app-toast-error-soft: #fdebeb;
+	--app-toast-warning: #f78b18;
+	--app-toast-warning-soft: #fff3e8;
+	--app-toast-info: #0091e6;
+	--app-toast-info-soft: #e5f4fc;
+	--toastify-icon-color-success: var(--app-toast-success);
+	--toastify-icon-color-error: var(--app-toast-error);
+	--toastify-icon-color-warning: var(--app-toast-warning);
+	--toastify-icon-color-info: var(--app-toast-info);
+	--toastify-color-progress-success: var(--app-toast-success);
+	--toastify-color-progress-error: var(--app-toast-error);
+	--toastify-color-progress-warning: var(--app-toast-warning);
+	--toastify-color-progress-info: var(--app-toast-info);
+}
+
+.Toastify__toast-container--top-center {
+	padding-top: 0px;
+}
+
+.Toastify__toast.app-toast {
+	padding: 16px 14px 18px 16px;
+	margin-bottom: 12px;
+	background: #ffffff !important;
+	color: #111111 !important;
+	font-family: 'Open Sans', sans-serif;
+	box-shadow: 0 4px 24px rgba(17, 17, 17, 0.12);
+	border-radius: var(--toastify-toast-bd-radius) var(--toastify-toast-bd-radius) 0 0;
+	align-items: flex-start;
+	overflow: hidden;
+
+	.Toastify__toast-body {
+		padding: 0 8px 0 0;
+		align-items: center;
+
+		&.app-toast__body {
+			flex: 1;
+			min-width: 0;
+		}
+	}
+
+	.Toastify__toast-icon {
+		width: 44px;
+		height: 44px;
+		min-width: 44px;
+		margin-inline-end: 14px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&.Toastify__toast--success .Toastify__toast-icon {
+		background: var(--app-toast-success-soft);
+	}
+
+	&.Toastify__toast--error .Toastify__toast-icon {
+		background: var(--app-toast-error-soft);
+	}
+
+	&.Toastify__toast--warning .Toastify__toast-icon {
+		background: var(--app-toast-warning-soft);
+	}
+
+	&.Toastify__toast--info .Toastify__toast-icon {
+		background: var(--app-toast-info-soft);
+	}
+
+	.app-toast__body > div:last-child {
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 1.35;
+		word-break: break-word;
+	}
+
+	.Toastify__progress-bar--wrp {
+		height: 3px;
+	}
+
+	.Toastify__progress-bar {
+		opacity: 1;
+		height: 3px;
+		bottom: 0;
+	}
+}
